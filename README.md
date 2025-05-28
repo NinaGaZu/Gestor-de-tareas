@@ -13,9 +13,11 @@ Aplicación web para gestionar tareas con funcionalidades como agregar, eliminar
 - Código modular y estructurado.
 - Tests con **Jest** para lógica y almacenamiento.
 
-## 🖼️ Captura
+## 🖼️ Capturas
 
-![Vista previa](./assets/icons/preview.png) <!-- reemplaza con la ruta correcta a tu captura -->
+![Vista previa](./assets/icons/gestor%20modo%20claro.png) 
+
+![Vista previa](./assets/icons/gestor%20modo%20oscuro.png) 
 
 ## 🛠️ Tecnologías
 
@@ -55,5 +57,6 @@ npm test
 npm run dev
 ```
 
-👩‍💻 Autora
+##👩‍💻 Autora
+
 Desarrollado con 💻 y ❤️ por Gianina Gaete (NinaGaZu)

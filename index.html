@@ -13,36 +13,39 @@
   </header>
 
   <main>
-    <section class="task-form">
-      <h2>Nueva Tarea</h2>
-      <form id="task-form">
-        <input type="text" id="title" placeholder="Título" required>
-        <textarea id="description" placeholder="Descripción"></textarea>
-        <input type="date" id="due-date">
-        <select id="category">
-          <option value="">Categoría</option>
-          <option value="personal">Personal</option>
-          <option value="trabajo">Trabajo</option>
-          <option value="otro">Otro</option>
-        </select>
-        <button type="submit">Agregar Tarea</button>
-      </form>
-    </section>
+    <div class="layout-container">
+      <section class="task-form">
+        <h2>Nueva Tarea</h2>
+        <form id="task-form">
+          <input type="text" id="title" placeholder="Título" required>
+          <textarea id="description" placeholder="Descripción"></textarea>
+          <input type="date" id="due-date">
+          <select id="category">
+            <option value="">Categoría</option>
+            <option value="personal">Personal</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="otro">Otro</option>
+          </select>
+          <button type="submit">Agregar Tarea</button>
+        </form>
+      </section>
+      
+      <div class="task-display">
+        <section class="task-controls">
+          <input type="text" id="search" placeholder="Buscar..." aria-label="Buscar tareas">
+          <select id="filter-category">
+            <option value="">Todas</option>
+            <option value="personal">Personal</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="otro">Otro</option>
+          </select>
+        </section>
 
-    <section class="task-controls">
-      <input type="text" id="search" placeholder="Buscar..." aria-label="Buscar tareas">
-      <select id="filter-category">
-        <option value="">Todas</option>
-        <option value="personal">Personal</option>
-        <option value="trabajo">Trabajo</option>
-        <option value="otro">Otro</option>
-      </select>
-    </section>
-
-    <section class="task-list" id="task-list" aria-live="polite">
-      <!-- Las tareas se renderizarán aquí -->
-    </section>
-
+        <section class="task-list" id="task-list" aria-live="polite">
+          <!-- Las tareas se renderizarán aquí -->
+        </section>
+      </div>
+    </div>
     
   </main>
 
