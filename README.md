@@ -41,7 +41,7 @@ No necesitas servidor, ¡es completamente local!
 
 ## 🧪 Ejecutar tests
 
-```bash
+```
 # Instalar dependencias
 npm install
 
