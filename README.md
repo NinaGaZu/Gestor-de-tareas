@@ -26,4 +26,4 @@ Aplicación web para gestionar tareas con funcionalidades como agregar, eliminar
 
 ## 📁 Estructura del proyecto
 
-(./assets/icons/10.png)
+![Vista previa](./assets/icons/10.png)
