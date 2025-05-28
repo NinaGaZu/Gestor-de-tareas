@@ -41,14 +41,17 @@ No necesitas servidor, ¡es completamente local!
 
 ## 🧪 Ejecutar tests
 
+
+- Instalar dependencias
 ```
-# Instalar dependencias
 npm install
-
-# Ejecutar pruebas
+```
+- Ejecutar pruebas
+```
 npm test
-
-# Iniciar la aplicación en modo desarrollo (si aplica)
+```
+- Iniciar la aplicación en modo desarrollo (si aplica)
+```
 npm run dev
 ```
 
