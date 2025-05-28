@@ -41,6 +41,16 @@ No necesitas servidor, ¡es completamente local!
 
 ## 🧪 Ejecutar tests
 
+<pre> ```bash
+# Instalar dependencias
+npm install
 
-<pre> ```bash # Instalar dependencias npm install # Ejecutar pruebas npm test ``` </pre>
+# Ejecutar pruebas
+npm test
 
+# Iniciar la aplicación en modo desarrollo (si aplica)
+npm run dev
+``` </pre>
+
+👩‍💻 Autora
+Desarrollado con 💻 y ❤️ por Gianina Gaete (NinaGaZu)
