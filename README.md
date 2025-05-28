@@ -41,7 +41,6 @@ No necesitas servidor, ¡es completamente local!
 
 ## 🧪 Ejecutar tests
 
-1. Instala las dependencias:
 
-<pre> ```bash npm install``` </pre>
+<pre> ```bash # Instalar dependencias npm install # Ejecutar pruebas npm test ``` </pre>
 
