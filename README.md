@@ -41,7 +41,7 @@ No necesitas servidor, ¡es completamente local!
 
 ## 🧪 Ejecutar tests
 
-<pre> ```bash
+```bash
 # Instalar dependencias
 npm install
 
@@ -50,7 +50,7 @@ npm test
 
 # Iniciar la aplicación en modo desarrollo (si aplica)
 npm run dev
-``` </pre>
+```
 
 👩‍💻 Autora
 Desarrollado con 💻 y ❤️ por Gianina Gaete (NinaGaZu)
