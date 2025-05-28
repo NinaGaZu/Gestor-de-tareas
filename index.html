@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de tareas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestor de Tareas</h1>
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </header>
+
+  <main>
+    <section class="task-form">
+      <h2>Nueva Tarea</h2>
+      <form id="task-form">
+        <input type="text" id="title" placeholder="Título" required>
+        <textarea id="description" placeholder="Descripción"></textarea>
+        <input type="date" id="due-date">
+        <select id="category">
+          <option value="">Categoría</option>
+          <option value="personal">Personal</option>
+          <option value="trabajo">Trabajo</option>
+          <option value="otro">Otro</option>
+        </select>
+        <button type="submit">Agregar Tarea</button>
+      </form>
+    </section>
+
+    <section class="task-controls">
+      <input type="text" id="search" placeholder="Buscar..." aria-label="Buscar tareas">
+      <select id="filter-category">
+        <option value="">Todas</option>
+        <option value="personal">Personal</option>
+        <option value="trabajo">Trabajo</option>
+        <option value="otro">Otro</option>
+      </select>
+    </section>
+
+    <section class="task-list" id="task-list" aria-live="polite">
+      <!-- Las tareas se renderizarán aquí -->
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ por NinaGaZu</p>
+  </footer>
+  
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

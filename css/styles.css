@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --primary-color: #0077cc;
+  --task-bg: #f9f9f9;
+  --border-color: #ddd;
+  --accent-color: #e6f2ff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #111111;
+  --text-color: #f9f9f9;
+  --primary-color: #66ccff;
+  --task-bg: #1e1e1e;
+  --border-color: #333;
+  --accent-color: #223344;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  padding-bottom: 4rem;
+}
+
+header {
+  padding: 1rem 2rem;
+  background-color: var(--task-bg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: transform 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.task-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--task-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* Controles de búsqueda y filtro */
+.task-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.task-controls input,
+.task-controls select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--task-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+/* Lista de tareas */
+.task-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.task-item {
+  padding: 1rem;
+  background-color: var(--task-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  cursor: grab;
+}
+
+.task-item:hover {
+  transform: scale(1.01);
+}
+
+.task-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.task-item button {
+  margin-top: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--task-bg);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .task-controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .task-controls input,
+  .task-controls select {
+    flex: 1;
+  }
+}
