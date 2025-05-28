@@ -57,6 +57,6 @@ npm test
 npm run dev
 ```
 
-##👩‍💻 Autora
+## 👩‍💻 Autora
 
 Desarrollado con 💻 y ❤️ por Gianina Gaete (NinaGaZu)
