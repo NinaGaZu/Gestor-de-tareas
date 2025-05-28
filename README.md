@@ -27,3 +27,21 @@ Aplicación web para gestionar tareas con funcionalidades como agregar, eliminar
 ## 📁 Estructura del proyecto
 
 ![Vista previa](./assets/icons/10.png)
+
+
+## ▶️ Cómo usar
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/NinaGaZu/Gestor-de-tareas.git
+
+2. Abre index.html en tu navegador.
+
+No necesitas servidor, ¡es completamente local!
+
+## 🧪 Ejecutar tests
+
+1. Instala las dependencias:
+
+<pre> ```bash npm install``` </pre>
+
